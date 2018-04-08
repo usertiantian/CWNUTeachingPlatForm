@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>layout 后台大布局 - Layui</title>
+  <title>西华师范大学教学管理系统</title>
   <link rel="stylesheet" href="/layui/css/layui.css">
 </head>
 <body class="layui-layout-body">
