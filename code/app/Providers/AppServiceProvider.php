@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,11 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $fields = DB::table('fie')
-            ->select('fie_key','fie_name')
-            ->where('fie_del',false)
-            ->get();
-        view()->share('fields',$fields);
+        //
     }
 
     /**
