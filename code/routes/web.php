@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('main');
 });
 Route::get('/XKGL',"mainController@XKGL");
+
+//实验管理（肖勇）
+Route::get('/SYGL',"SYGLController@index");
+Route::post('/postTest','SYGLController@postTest');
