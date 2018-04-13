@@ -14,7 +14,7 @@ class SYGLController extends Controller
     public function postTest(Request $request)
     {
         return response()->json(array([
-                                          'status' => 1,
+                                          'status' => 'success',
                                           'msg' => 'ok',
                                       ]));
     }

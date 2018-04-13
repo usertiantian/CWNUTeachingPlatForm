@@ -1,15 +1,15 @@
-{{--大家加油！--}}
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>西华师范大学教学管理系统</title>
   <link rel="stylesheet" href="/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="/css/global.css">
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
   <div class="layui-header">
-    <div class="layui-logo">CWNU教学管理系统</div>
+    <div class="layui-logo" style="font-size: 19px;color: #dedede;">教务管理系统</div> 
     <ul class="layui-nav layui-layout-left">
       <li class="layui-nav-item"><a href="">考勤／互动</a></li>
       <li class="layui-nav-item"><a href="">调查反馈</a></li>
@@ -41,6 +41,7 @@
     <div class="layui-side-scroll">
       <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
       <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item"><a href="javascript:loadView('HOME');">主页</a></li>
         <li class="layui-nav-item layui-nav-itemed">
           <a class="" href="javascript:;">课程管理</a>
           <dl class="layui-nav-child">
@@ -80,7 +81,7 @@
   </div>
 </div>
 <script src="/layui/layui.js"></script>
-<script src="/js/jquery-3.3.1.min.js"></script>>
+<script src="/js/jquery-3.3.1.min.js"></script>
 <script>
 /*
   说明
@@ -109,7 +110,7 @@ layui.use('element', function(){
 });
 
 function loadView(viewString){
-  $("#contentView").html("正在加载...");
+  $("#contentView").html("<i class='layui-icon layui-anim layui-anim-rotate layui-anim-loop' style='font-size:70px;margin-left:48%;margin-top:300px;'>&#xe63d;</i>");
   $.get("/" + viewString,function(data,status){
     if(status == "success")
       $("#contentView").html(data);

@@ -3,8 +3,12 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 class mainController extends Controller{
-	public function XKGL(){
-		return view("XKGL");
+	public function HOME(){
+		return view("HOME");
+	}
+
+	public function login(){
+		return view("login");
 	}
 }
 ?>
