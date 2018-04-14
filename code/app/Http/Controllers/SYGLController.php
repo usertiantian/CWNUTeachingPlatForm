@@ -8,7 +8,7 @@ class SYGLController extends Controller
 {
     //实验管理模块由肖勇负责
     public function index(){
-        return view('SYGL\index');
+        return view('SYGL.index');
     }
 
     public function postTest(Request $request)
