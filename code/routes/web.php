@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('main');
 });
+
+Route::get('/HOME',"mainController@HOME");
+Route::get('/login',"mainController@login");
+
+
+Route::get('/XKGL',"KCGLController@XKGL");
+
+//实验管理（肖勇）
+Route::get('/SYGL',"SYGLController@index");
+Route::post('/postTest','SYGLController@postTest');
